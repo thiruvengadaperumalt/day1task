@@ -27,3 +27,26 @@
 
 
 objects and its internal representation in Javascript
+
+    In JavaScript, an object is a collection of key-value pairs that represent properties of an entity. The keys are strings or Symbols, and the values can be any data type, including other objects. The internal representation of an object in JavaScript is called its "object structure" or "object layout." This includes information about the object's properties, such as their names, values, and types, as well as information about the object's prototype (if it has one) and any other internal data. The specifics of the object structure can vary depending on the JavaScript engine and implementation, but generally, it is designed to be fast and efficient for property lookups and other common operations on objects.
+      Every object has some property associated with some value. These values can be accessed using these properties associated with them.
+
+var myCar = new Object();
+myCar.make = 'Suzuki';
+myCar.model = 'Alto800';
+myCar.year = 2023;
+myCar.wheels = 4;
+After creating myCar object, the value inside the object can be accessed using keys.
+i.e.
+myCar.year
+Output: 2023
+These values can be accessed using brackets notation also.
+myCar.year
+Output:2023
+
+Object Methods.
+
+JavaScript objects come with built-in methods for common operations:
+Object.keys(): Returns an array of an object's own enumerable property names.
+Object.values(): Returns an array of an object's own enumerable property values.
+Object.entries(): Returns an array of an object's own enumerable property key-value pairs.
