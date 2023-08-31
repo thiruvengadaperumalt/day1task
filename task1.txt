@@ -1,0 +1,26 @@
+1 Multiplexing and Concurrent Requests:
+    HTTP/1.1: It uses a single connection for each request/response pair. This means that a browser can only request one resource at a time per connection, and if a resource is blocked or takes time to load, it can block subsequent requests.
+    HTTP/2: It introduces multiplexing, which allows multiple requests and responses to be sent and received concurrently over a single connection. This greatly improves the efficiency of data transfer, as it eliminates the need to open multiple connections.
+
+2 Header Compression:
+    HTTP/1.1: Headers (metadata) are sent with each request and response, and they can be large, leading to increased overhead and slower performance.
+    HTTP/2: It employs header compression techniques to reduce the size of headers, which reduces overhead and speeds up the loading of web pages.
+
+3 Server Push:
+    HTTP/1.1: The server can't proactively send resources to the client; the client must explicitly request each resource.
+    HTTP/2: It introduces server push, where the server can push additional resources to the client that it predicts the client will need. This can reduce the number of round-trip requests and speed up page loading.
+
+4 Binary Protocol:
+    HTTP/1.1: It uses plain text for communication, which can be inefficient due to the verbosity of human-readable text.
+    HTTP/2: It uses a binary protocol for communication, which is more compact and easier for computers to parse, resulting in faster data processing.
+
+5 Prioritization:
+   HTTP/1.1: Requests have no inherent priority, which can lead to suboptimal performance for critical resources.
+   HTTP/2: It allows for explicit stream prioritization, enabling the client to indicate the importance of different resources. This helps ensure that critical resources are loaded faster.
+
+6 Connection Reuse:
+   HTTP/1.1: Connections are closed after each request/response pair, leading to additional latency when subsequent requests are made.
+   HTTP/2: Connections are kept open, allowing for reuse and reducing latency for subsequent requests.
+
+7 Security:
+   Both HTTP/1.1 and HTTP/2 can use secure connections (HTTPS) for encrypted data transfer. Security considerations are largely similar between the two protocols.
