@@ -24,3 +24,6 @@
 
 7 Security:
    Both HTTP/1.1 and HTTP/2 can use secure connections (HTTPS) for encrypted data transfer. Security considerations are largely similar between the two protocols.
+
+
+objects and its internal representation in Javascript
